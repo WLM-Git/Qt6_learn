@@ -10,9 +10,11 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
+    tmylabel.cpp \
     widget.cpp
 
 HEADERS += \
+    tmylabel.h \
     widget.h
 
 FORMS += \

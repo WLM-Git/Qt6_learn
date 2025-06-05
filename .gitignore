@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+sample6_1/build/Qt_6_9_0_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/
+
+sample6_1/build/Qt_6_9_0_for_macOS-Debug/.qtc_clangd/

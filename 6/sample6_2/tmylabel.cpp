@@ -22,3 +22,9 @@ bool TMyLabel::event(QEvent *e)
     }
     return QLabel::event(e);            //运行父类的event，处理其他的事件类型（有些是默认的）
 }
+
+void TMyLabel::mouseDoubleClickEvent(QMouseEvent *event)
+{
+    Q_UNUSED(event);
+    emit doubleClicked();   //发射信号
+}

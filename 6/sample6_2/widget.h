@@ -19,5 +19,11 @@ public:
 
 private:
     Ui::Widget *ui;
+
+    // QWidget interface
+protected:
+    void mouseDoubleClickEvent(QMouseEvent *event);
+private slots:
+    void do_doubleClick();
 };
 #endif // WIDGET_H

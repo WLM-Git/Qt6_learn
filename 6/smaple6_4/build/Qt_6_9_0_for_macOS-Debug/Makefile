@@ -388,6 +388,7 @@ DIST          = /Users/wanliming/Qt/6.9.0/macos/mkspecs/features/spec_pre.prf \
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/features/qt_config.prf \
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/macx-clang/qmake.conf \
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/features/spec_post.prf \
+		../../.qmake.stash \
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/features/exclusive_builds.prf \
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/features/mac/sdk.prf \
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/features/toolchain.prf \
@@ -427,7 +428,7 @@ TARGET        = smaple6_4.app/Contents/MacOS/smaple6_4
 EXPORT_QMAKE_MAC_SDK = macosx
 EXPORT_QMAKE_MAC_SDK_VERSION = 15.5
 EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Applications/Xcode.app/Contents/Developer
-EXPORT__QMAKE_STASH_ = 
+EXPORT__QMAKE_STASH_ = /Users/wanliming/Develop/Personal/Qt6_learn/6/smaple6_4/build/Qt_6_9_0_for_macOS-Debug/.qmake.stash
 EXPORT_VALID_ARCHS = x86_64 arm64
 EXPORT_DEFAULT_ARCHS = arm64
 EXPORT_ARCHS = $(filter $(EXPORT_VALID_ARCHS), $(if $(ARCHS), $(ARCHS), $(if $(EXPORT_DEFAULT_ARCHS), $(EXPORT_DEFAULT_ARCHS), $(EXPORT_VALID_ARCHS))))
@@ -774,6 +775,7 @@ Makefile: ../../smaple6_4.pro /Users/wanliming/Qt/6.9.0/macos/mkspecs/macx-clang
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/features/qt_config.prf \
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/macx-clang/qmake.conf \
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/features/exclusive_builds.prf \
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/features/mac/sdk.prf \
 		/Users/wanliming/Qt/6.9.0/macos/mkspecs/features/toolchain.prf \
@@ -1139,6 +1141,7 @@ Makefile: ../../smaple6_4.pro /Users/wanliming/Qt/6.9.0/macos/mkspecs/macx-clang
 /Users/wanliming/Qt/6.9.0/macos/mkspecs/features/qt_config.prf:
 /Users/wanliming/Qt/6.9.0/macos/mkspecs/macx-clang/qmake.conf:
 /Users/wanliming/Qt/6.9.0/macos/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /Users/wanliming/Qt/6.9.0/macos/mkspecs/features/exclusive_builds.prf:
 /Users/wanliming/Qt/6.9.0/macos/mkspecs/features/mac/sdk.prf:
 /Users/wanliming/Qt/6.9.0/macos/mkspecs/features/toolchain.prf:
@@ -1208,6 +1211,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r smaple6_4.app
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 

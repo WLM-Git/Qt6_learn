@@ -22,8 +22,8 @@ private:
 
     // QWidget interface
 protected:
-    virtual void resizeEvent(QResizeEvent *event) override;
-    virtual void dragEnterEvent(QDragEnterEvent *event) override;
-    virtual void dropEvent(QDropEvent *event) override;
+    virtual void resizeEvent(QResizeEvent *event) override;                     //窗口大小改变时触发的事件处理函数
+    virtual void dragEnterEvent(QDragEnterEvent *event) override;               //拖动文件进入窗口时触发的事件处理函数
+    virtual void dropEvent(QDropEvent *event) override;                         //拖动文件在窗口放置时触发的事件处理函数
 };
 #endif // WIDGET_H

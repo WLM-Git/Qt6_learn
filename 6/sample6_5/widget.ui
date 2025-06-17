@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>634</width>
-    <height>432</height>
+    <width>641</width>
+    <height>411</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>具有DragDrop功能的组件</string>
@@ -16,63 +22,392 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>12</x>
-     <y>181</y>
-     <width>611</width>
+     <x>10</x>
+     <y>160</y>
+     <width>621</width>
      <height>241</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0,0">
     <item>
      <widget class="QGroupBox" name="groupBox_1">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
       <property name="title">
-       <string>GroupBox</string>
+       <string>listSource</string>
       </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QListWidget" name="listWidget">
+         <property name="accessibleDescription">
+          <string notr="true"/>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Sunken</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>粘贴</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/paste.bmp</normaloff>:/icon/images/paste.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>粗体</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/bold.bmp</normaloff>:/icon/images/bold.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>斜体</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/italic.bmp</normaloff>:/icon/images/italic.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>下划线</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/underscore.bmp</normaloff>:/icon/images/underscore.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>左对齐</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/leftAlign.bmp</normaloff>:/icon/images/leftAlign.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>中间对齐</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/centerAlign.bmp</normaloff>:/icon/images/centerAlign.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>右对齐</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/rightAlign.bmp</normaloff>:/icon/images/rightAlign.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>红色</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/red.bmp</normaloff>:/icon/images/red.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>绿色</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/green.bmp</normaloff>:/icon/images/green.bmp</iconset>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </item>
     <item>
      <widget class="QGroupBox" name="groupBox">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
       <property name="title">
-       <string>GroupBox</string>
+       <string>listWidget</string>
       </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QListWidget" name="listWidget_2">
+         <item>
+          <property name="text">
+           <string>复制</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/copy.bmp</normaloff>:/icon/images/copy.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>粗体</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/bold.bmp</normaloff>:/icon/images/bold.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>下划线</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/underscore.bmp</normaloff>:/icon/images/underscore.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>绿色</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/green.bmp</normaloff>:/icon/images/green.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>中间对齐</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/centerAlign.bmp</normaloff>:/icon/images/centerAlign.bmp</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>粘贴</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/paste.bmp</normaloff>:/icon/images/paste.bmp</iconset>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </item>
     <item>
      <widget class="QGroupBox" name="groupBox_2">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
       <property name="title">
-       <string>GroupBox</string>
+       <string>treeWidget</string>
       </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QTreeWidget" name="treeWidget_3">
+         <column>
+          <property name="text">
+           <string>编辑</string>
+          </property>
+         </column>
+         <item>
+          <property name="text">
+           <string>编辑</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>复制</string>
+           </property>
+           <property name="icon">
+            <iconset resource="red.qrc">
+             <normaloff>:/icon/images/copy.bmp</normaloff>:/icon/images/copy.bmp</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>剪切</string>
+           </property>
+           <property name="icon">
+            <iconset resource="red.qrc">
+             <normaloff>:/icon/images/cut.bmp</normaloff>:/icon/images/cut.bmp</iconset>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>格式</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>粗体</string>
+           </property>
+           <property name="icon">
+            <iconset resource="red.qrc">
+             <normaloff>:/icon/images/bold.bmp</normaloff>:/icon/images/bold.bmp</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>下划线</string>
+           </property>
+           <property name="icon">
+            <iconset resource="red.qrc">
+             <normaloff>:/icon/images/underscore.bmp</normaloff>:/icon/images/underscore.bmp</iconset>
+           </property>
+          </item>
+         </item>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </item>
     <item>
      <widget class="QGroupBox" name="groupBox_3">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="title">
-       <string>GroupBox</string>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
       </property>
+      <property name="title">
+       <string>tableWidget</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QTableWidget" name="tableWidget_4">
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <column/>
+         <item row="0" column="0">
+          <property name="text">
+           <string>右对齐</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/rightAlign.bmp</normaloff>:/icon/images/rightAlign.bmp</iconset>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>绿色</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/green.bmp</normaloff>:/icon/images/green.bmp</iconset>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>红色</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/red.bmp</normaloff>:/icon/images/red.bmp</iconset>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string>左对齐</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/leftAlign.bmp</normaloff>:/icon/images/leftAlign.bmp</iconset>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string>斜体</string>
+          </property>
+          <property name="icon">
+           <iconset resource="red.qrc">
+            <normaloff>:/icon/images/italic.bmp</normaloff>:/icon/images/italic.bmp</iconset>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </item>
    </layout>
@@ -80,10 +415,10 @@
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>12</x>
-     <y>12</y>
-     <width>610</width>
-     <height>151</height>
+     <x>10</x>
+     <y>10</y>
+     <width>621</width>
+     <height>145</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -92,8 +427,177 @@
    <property name="frameShadow">
     <enum>QFrame::Shadow::Raised</enum>
    </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="title">
+       <string>设置对象</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QRadioButton" name="radio_Source">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>RadioButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>listWidget</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radio_Tree">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>treeWidget</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radio_Table">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>tableWidget</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="title">
+       <string>拖放参数设置</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="checkBox">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>acceptDrops</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="checkBox_2">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>dragEnabled</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="text">
+          <string>dragDropMode</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="comboBox">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>NoGragDrop</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="text">
+          <string>defaultDropAction</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="comboBox_2">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>CopyAction</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>211</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="red.qrc"/>
+ </resources>
  <connections/>
 </ui>

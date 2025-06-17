@@ -34,10 +34,10 @@
    <item>
     <widget class="QFrame" name="frame">
      <property name="frameShape">
-      <enum>QFrame::Panel</enum>
+      <enum>QFrame::Shape::Panel</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <property name="leftMargin">
@@ -194,7 +194,7 @@
       <item>
        <spacer name="horizontalSpacer">
         <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+         <enum>Qt::Orientation::Horizontal</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -214,7 +214,6 @@
        <property name="font">
         <font>
          <pointsize>10</pointsize>
-         <weight>50</weight>
          <bold>false</bold>
         </font>
        </property>
@@ -243,10 +242,10 @@
         <item>
          <widget class="QListWidget" name="listSource">
           <property name="editTriggers">
-           <set>QAbstractItemView::NoEditTriggers</set>
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
           </property>
           <property name="dragDropMode">
-           <enum>QAbstractItemView::DragOnly</enum>
+           <enum>QAbstractItemView::DragDropMode::DragOnly</enum>
           </property>
           <property name="alternatingRowColors">
            <bool>true</bool>
@@ -262,7 +261,7 @@
             <string>剪切</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/200.bmp</normaloff>:/icons/images/200.bmp</iconset>
            </property>
           </item>
@@ -271,7 +270,7 @@
             <string>复制</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/202.bmp</normaloff>:/icons/images/202.bmp</iconset>
            </property>
           </item>
@@ -280,7 +279,7 @@
             <string>粘贴</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/204.bmp</normaloff>:/icons/images/204.bmp</iconset>
            </property>
           </item>
@@ -289,7 +288,7 @@
             <string>粗体</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/500.bmp</normaloff>:/icons/images/500.bmp</iconset>
            </property>
           </item>
@@ -298,7 +297,7 @@
             <string>斜体</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/502.bmp</normaloff>:/icons/images/502.bmp</iconset>
            </property>
           </item>
@@ -307,7 +306,7 @@
             <string>下划线</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/504.bmp</normaloff>:/icons/images/504.bmp</iconset>
            </property>
           </item>
@@ -316,7 +315,7 @@
             <string>左对齐</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/508.bmp</normaloff>:/icons/images/508.bmp</iconset>
            </property>
           </item>
@@ -325,7 +324,7 @@
             <string>中间对齐</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/510.bmp</normaloff>:/icons/images/510.bmp</iconset>
            </property>
           </item>
@@ -334,7 +333,7 @@
             <string>右对齐</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/512.bmp</normaloff>:/icons/images/512.bmp</iconset>
            </property>
           </item>
@@ -343,7 +342,7 @@
             <string>红色</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/718.bmp</normaloff>:/icons/images/718.bmp</iconset>
            </property>
           </item>
@@ -352,7 +351,7 @@
             <string>绿色</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/724.bmp</normaloff>:/icons/images/724.bmp</iconset>
            </property>
           </item>
@@ -361,7 +360,7 @@
             <string>蓝色</string>
            </property>
            <property name="icon">
-            <iconset resource="res.qrc">
+            <iconset>
              <normaloff>:/icons/images/728.bmp</normaloff>:/icons/images/728.bmp</iconset>
            </property>
           </item>
@@ -391,16 +390,16 @@
         <item>
          <widget class="QListWidget" name="listWidget">
           <property name="editTriggers">
-           <set>QAbstractItemView::NoEditTriggers</set>
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
           </property>
           <property name="dragDropMode">
-           <enum>QAbstractItemView::NoDragDrop</enum>
+           <enum>QAbstractItemView::DragDropMode::NoDragDrop</enum>
           </property>
           <property name="defaultDropAction">
-           <enum>Qt::CopyAction</enum>
+           <enum>Qt::DropAction::CopyAction</enum>
           </property>
           <property name="viewMode">
-           <enum>QListView::ListMode</enum>
+           <enum>QListView::ViewMode::ListMode</enum>
           </property>
          </widget>
         </item>
@@ -431,16 +430,16 @@
            <bool>true</bool>
           </property>
           <property name="editTriggers">
-           <set>QAbstractItemView::NoEditTriggers</set>
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
           </property>
           <property name="dragDropOverwriteMode">
            <bool>true</bool>
           </property>
           <property name="dragDropMode">
-           <enum>QAbstractItemView::InternalMove</enum>
+           <enum>QAbstractItemView::DragDropMode::InternalMove</enum>
           </property>
           <property name="defaultDropAction">
-           <enum>Qt::MoveAction</enum>
+           <enum>Qt::DropAction::MoveAction</enum>
           </property>
           <attribute name="headerVisible">
            <bool>false</bool>
@@ -492,19 +491,19 @@
            </size>
           </property>
           <property name="editTriggers">
-           <set>QAbstractItemView::NoEditTriggers</set>
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
           </property>
           <property name="dragDropMode">
-           <enum>QAbstractItemView::DropOnly</enum>
+           <enum>QAbstractItemView::DragDropMode::DropOnly</enum>
           </property>
           <property name="defaultDropAction">
-           <enum>Qt::CopyAction</enum>
+           <enum>Qt::DropAction::CopyAction</enum>
           </property>
           <property name="alternatingRowColors">
            <bool>true</bool>
           </property>
           <property name="selectionMode">
-           <enum>QAbstractItemView::SingleSelection</enum>
+           <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
           </property>
           <property name="rowCount">
            <number>6</number>
@@ -536,8 +535,6 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="res.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

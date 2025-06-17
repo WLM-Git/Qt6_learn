@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>images/copy.bmp</file>
+        <file>images/paste.bmp</file>
+        <file>images/bold.bmp</file>
+        <file>images/centerAlign.bmp</file>
+        <file>images/cut.bmp</file>
+        <file>images/green.bmp</file>
+        <file>images/italic.bmp</file>
+        <file>images/leftAlign.bmp</file>
+        <file>images/red.bmp</file>
+        <file>images/rightAlign.bmp</file>
+        <file>images/underscore.bmp</file>
+    </qresource>
+</RCC>

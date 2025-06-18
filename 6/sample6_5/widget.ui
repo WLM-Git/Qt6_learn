@@ -54,7 +54,7 @@
         <number>5</number>
        </property>
        <item>
-        <widget class="QListWidget" name="listWidget">
+        <widget class="QListWidget" name="listSource">
          <property name="accessibleDescription">
           <string notr="true"/>
          </property>
@@ -178,7 +178,7 @@
         <number>5</number>
        </property>
        <item>
-        <widget class="QListWidget" name="listWidget_2">
+        <widget class="QListWidget" name="listWidget">
          <item>
           <property name="text">
            <string>复制</string>
@@ -263,7 +263,7 @@
         <number>5</number>
        </property>
        <item>
-        <widget class="QTreeWidget" name="treeWidget_3">
+        <widget class="QTreeWidget" name="treeWidget">
          <column>
           <property name="text">
            <string>编辑</string>
@@ -351,7 +351,7 @@
         <number>5</number>
        </property>
        <item>
-        <widget class="QTableWidget" name="tableWidget_4">
+        <widget class="QTableWidget" name="tableWidget">
          <row/>
          <row/>
          <row/>

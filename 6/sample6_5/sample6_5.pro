@@ -16,8 +16,7 @@ HEADERS += \
     widget.h
 
 FORMS += \
-    widget.ui \
-    widget_sample.ui
+    widget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -417,7 +417,7 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>621</width>
+     <width>617</width>
      <height>145</height>
     </rect>
    </property>
@@ -448,7 +448,7 @@
           </font>
          </property>
          <property name="text">
-          <string>RadioButton</string>
+          <string>listSource</string>
          </property>
         </widget>
        </item>
@@ -498,19 +498,34 @@
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0">
-        <widget class="QCheckBox" name="checkBox">
+        <widget class="QCheckBox" name="chkBox_AcceptDrops">
          <property name="font">
           <font>
            <pointsize>10</pointsize>
           </font>
          </property>
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
          <property name="text">
           <string>acceptDrops</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <property name="autoRepeat">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QCheckBox" name="checkBox_2">
+        <widget class="QCheckBox" name="chkBox_DragEnabled">
          <property name="font">
           <font>
            <pointsize>10</pointsize>
@@ -518,6 +533,9 @@
          </property>
          <property name="text">
           <string>dragEnabled</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -535,7 +553,7 @@
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QComboBox" name="comboBox">
+        <widget class="QComboBox" name="combo_Mode">
          <property name="font">
           <font>
            <pointsize>10</pointsize>
@@ -545,6 +563,26 @@
          <item>
           <property name="text">
            <string>NoGragDrop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DragOnly</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DropOnly</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>GragDrop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>InternalMove</string>
           </property>
          </item>
         </widget>
@@ -563,7 +601,7 @@
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QComboBox" name="comboBox_2">
+        <widget class="QComboBox" name="combo_DefaultActionIndex">
          <property name="font">
           <font>
            <pointsize>10</pointsize>
@@ -573,6 +611,21 @@
          <item>
           <property name="text">
            <string>CopyAction</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MoveAction</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LinkAction</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IgnoreAction</string>
           </property>
          </item>
         </widget>

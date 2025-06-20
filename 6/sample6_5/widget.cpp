@@ -103,3 +103,51 @@ void Widget::on_radio_Table_clicked()
     refreshToUI(ui->groupBox_3);
 }
 
+
+void Widget::on_chkBox_AcceptDrops_clicked(bool checked)
+{
+    //acceptDrop复选框
+    m_itemView->setAcceptDrops(checked);
+}
+
+
+void Widget::on_chkBox_DragEnabled_clicked(bool checked)
+{
+    //dragEnable复选框
+    m_itemView->setDragEnabled(checked);
+}
+
+
+void Widget::on_combo_Mode_currentIndexChanged(int index)
+{
+    //下拉框列表
+    QAbstractItemView::DragDropMode mode = (QAbstractItemView::DragDropMode) index;
+    m_itemView->setDragDropMode(mode);
+}
+
+
+void Widget::on_combo_DefaultActionIndex_currentIndexChanged(int index)
+{
+    //先将下拉列表里的index转化为action的类型
+    Qt::DropAction actionType = getDropActionType(index);
+    //再将得到的action类型赋予m_itemView的action
+    m_itemView->setDefaultDropAction(actionType);
+}
+
+Qt::DropAction Widget::getDropActionType(int index)
+{
+    switch (index)
+    {
+    case 0:
+        return Qt::CopyAction;
+    case 1:
+        return Qt::MoveAction;
+    case 2:
+        return Qt::LinkAction;
+    case 3:
+        return Qt::IgnoreAction;
+    default:
+        return Qt::CopyAction;
+    }
+}
+

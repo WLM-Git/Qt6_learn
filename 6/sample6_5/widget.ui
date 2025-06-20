@@ -562,7 +562,7 @@
          </property>
          <item>
           <property name="text">
-           <string>NoGragDrop</string>
+           <string>NoDragDrop</string>
           </property>
          </item>
          <item>
@@ -577,7 +577,7 @@
          </item>
          <item>
           <property name="text">
-           <string>GragDrop</string>
+           <string>DragDrop</string>
           </property>
          </item>
          <item>

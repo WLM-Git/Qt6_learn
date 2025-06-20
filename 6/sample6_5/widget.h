@@ -31,7 +31,16 @@ private slots:
 
     void on_radio_Table_clicked();
 
+    void on_chkBox_AcceptDrops_clicked(bool checked);
+
+    void on_chkBox_DragEnabled_clicked(bool checked);
+
+    void on_combo_Mode_currentIndexChanged(int index);
+
+    void on_combo_DefaultActionIndex_currentIndexChanged(int index);
+
 private:
     Ui::Widget *ui;
+    Qt::DropAction getDropActionType(int index);
 };
 #endif // WIDGET_H

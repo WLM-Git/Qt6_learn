@@ -42,5 +42,9 @@ private slots:
 private:
     Ui::Widget *ui;
     Qt::DropAction getDropActionType(int index);
+
+    // QObject interface
+public:
+    bool eventFilter(QObject *watched, QEvent *event);
 };
 #endif // WIDGET_H

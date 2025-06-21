@@ -1,6 +1,6 @@
 #include "widget.h"
 #include "ui_widget.h"
-
+#include <QKeyEvent>
 void Widget::refreshToUI(QGroupBox *curGroupBox)
 {
     //组件属性显示到界面上
@@ -149,5 +149,53 @@ Qt::DropAction Widget::getDropActionType(int index)
     default:
         return Qt::CopyAction;
     }
+}
+
+bool Widget::eventFilter(QObject *watched, QEvent *event)
+{
+    if (event->type() != QEvent::KeyPress)
+    {
+        return QWidget::eventFilter(watched,event);
+    }
+    QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
+    if (keyEvent->key() != Qt::Key_Delete)
+    {
+        return QWidget::eventFilter(watched,event);
+    }
+    if (watched == ui->listSource)
+    {
+        QListWidgetItem *item =ui->listSource->takeItem(ui->listSource->currentRow());
+        delete item;
+    }
+    else if (watched == ui->listWidget)
+    {
+        QListWidgetItem *item =ui->listWidget->takeItem(ui->listWidget->currentRow());
+        delete item;
+    }
+    else if (watched == ui->treeWidget)
+    {
+        QTreeWidgetItem *curItem = ui->treeWidget->currentItem();
+        //如果有上级项
+        if (curItem->parent() != nullptr)
+        {
+            QTreeWidgetItem *parent = curItem->parent();
+            parent->removeChild(curItem);
+        }
+        //如果已经是最上层项
+        else
+        {
+            int index = ui->treeWidget->indexOfTopLevelItem(curItem);
+            ui->treeWidget->takeTopLevelItem(index);
+        }
+        delete curItem;
+    }
+    else if (watched == ui->tableWidget)
+    {
+        QTableWidgetItem *item = ui->tableWidget->takeItem(
+            ui->tableWidget->currentRow(),
+            ui->tableWidget->currentColumn());
+        delete item;
+    }
+    return true;
 }
 
